@@ -1,0 +1,61 @@
+.body{
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+    overflow-x: hidden;
+    color: white;
+}
+
+.header{
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-weight: lighter;
+}
+#pfimage{
+    left: 0;
+    top: 50%;
+    transition: transform 0.5s ease-out;
+    max-width: 100%!important; 
+    height: auto; 
+    overflow: hidden!important;
+  }
+#main{
+    color: white;
+}
+.imageframe{
+    margin: auto;
+    height: 20vh;
+    width: fit-content;
+    background-color: grey;
+    border-radius: 25px;
+    margin: 10px;
+    transition:0.5s;
+    float: left;
+}
+.imageframe img{
+    height: 100%;
+    width: 100%;
+}
+.imageframe:hover{
+    background-color: black;
+}
+
+#projects{
+    margin:auto;
+    width: 75%;
+    color: white;
+    overflow: hidden;
+}
+
+#socials{
+    margin:auto;
+    width: 75%;
+    color: white;
+    overflow: hidden;
+}
+
+.subHeadingTitle{
+    margin-left: 15px;
+}
