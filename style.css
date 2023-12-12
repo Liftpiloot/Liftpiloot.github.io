@@ -6,8 +6,9 @@
     color: white;
 }
 
-.header{
-    margin-top: 50px;
+
+#name{
+    margin-top: 100px;
     color: white;
     text-align: center;
     font-size: 50px;
@@ -17,22 +18,27 @@
     left: 0;
     top: 50%;
     transition: transform 0.5s ease-out;
-    max-width: 100%!important; 
+    max-width: 40%!important; 
     height: auto; 
     overflow: hidden!important;
+  }
+  #pfimage img{
+    height: 100%;
+    width: 100%;
   }
 #main{
     color: white;
 }
 .imageframe{
+    display: inline-block;
     margin: auto;
-    height: 20vh;
+    height: 15vh;
     width: fit-content;
-    background-color: grey;
+    background-color: #262626;
     border-radius: 25px;
-    margin: 10px;
+    margin: 25px;
+    margin-bottom: 50px;
     transition:0.5s;
-    float: left;
 }
 .imageframe img{
     height: 100%;
@@ -44,18 +50,34 @@
 
 #projects{
     margin:auto;
-    width: 75%;
+    max-width: 75%;
+    width:fit-content;
     color: white;
     overflow: hidden;
+    border: 5px solid Grey;
+    border-radius: 25px;
+    margin-bottom: 50px;
 }
 
 #socials{
     margin:auto;
-    width: 75%;
+    max-width: 75%;
+    width: fit-content;
     color: white;
     overflow: hidden;
+    border: 5px solid Grey;
+    border-radius: 25px;
+    margin-bottom: 50px;
 }
 
 .subHeadingTitle{
+    margin:auto;
     margin-left: 15px;
+    font-size:xx-large
+}
+
+.projectTitle{
+    margin: auto;
+    font-size: medium;
+
 }

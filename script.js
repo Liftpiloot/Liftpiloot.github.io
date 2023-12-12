@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     var movingImage = document.getElementById("pfimage");
+    var title = document.getElementById("name")
     var windowHeight = window.innerHeight;
 
     window.addEventListener("scroll", function() {
@@ -7,5 +8,6 @@ document.addEventListener("DOMContentLoaded", function() {
       var newPosition = (scrollPosition / windowHeight) * 100;
 
       movingImage.style.transform = "translateX(" + newPosition + "vw)";
+      title.style.transform = "translateY(" + 0.7 * scrollPosition + "px)";
     });
   });
