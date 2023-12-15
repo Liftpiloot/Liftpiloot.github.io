@@ -8,6 +8,8 @@
 
 
 #name{
+    position: relative;
+    z-index: 1;
     margin-top: 100px;
     color: #a9a9a9;
     text-align: center;
@@ -15,6 +17,8 @@
     font-weight: lighter;
 }
 #pfimage{
+    position: relative;
+    z-index: 2;
     left: 0;
     top: 50%;
     transition: transform 0.5s ease-out;
@@ -50,12 +54,15 @@
 }
 
 #projects{
+    position: relative;
+    z-index: 2;
     margin:auto;
     max-width: 95%;
     width:fit-content;
     color: white;
     overflow: hidden;
     border: 5px solid Grey;
+    background-color: #191919;
     border-radius: 25px;
     margin-bottom: 50px;
 }

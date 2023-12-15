@@ -8,6 +8,6 @@ document.addEventListener("DOMContentLoaded", function() {
       var newPosition = (scrollPosition / windowHeight) * 100;
 
       movingImage.style.transform = "translateX(" + newPosition + "vw)";
-      title.style.transform = "translateY(" + 0.5 * scrollPosition + "px)";
+      title.style.transform = "translateY(" + 0.6 * scrollPosition + "px)";
     });
   });
