@@ -1,5 +1,5 @@
 .body{
-    background-color: black;
+    background-color: #191919;
     font-family: 'Courier New', Courier, monospace;
     font-weight: lighter;
     overflow-x: hidden;
@@ -9,7 +9,7 @@
 
 #name{
     margin-top: 100px;
-    color: white;
+    color: #a9a9a9;
     text-align: center;
     font-size: 50px;
     font-weight: lighter;
@@ -33,12 +33,13 @@
     display: inline-block;
     margin: auto;
     height: 15vh;
-    width: fit-content;
+    width: 15vh;
     background-color: #262626;
     border-radius: 25px;
     margin: 5px;
     margin-bottom: 50px;
     transition:0.5s;
+    text-align: center;
 }
 .imageframe img{
     height: 100%;
@@ -57,7 +58,6 @@
     border: 5px solid Grey;
     border-radius: 25px;
     margin-bottom: 50px;
-    background-color: black;
 }
 
 #socials{
@@ -95,6 +95,7 @@
 .projectTitle{
     margin: auto;
     font-size: medium;
+    font-size: 2vh;
 
 }
 
