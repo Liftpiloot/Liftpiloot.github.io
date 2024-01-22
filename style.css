@@ -52,6 +52,25 @@
 .imageframe:hover{
     background-color: black;
 }
+#aboutMe{
+
+}
+
+#information{
+  position: relative;
+  z-index: 2;
+  background-color: #191919;
+    margin:auto;
+    max-width: 95%;
+    width: fit-content;
+    color: white;
+    font-size: larger;
+    overflow: hidden;
+    border: 5px solid Grey;
+    border-radius: 25px;
+    margin-bottom: 50px;
+    padding: 10px;
+}
 
 #projects{
     position: relative;
@@ -65,6 +84,7 @@
     background-color: #191919;
     border-radius: 25px;
     margin-bottom: 50px;
+    padding: 10px; /* Add padding around the text */
 }
 
 #socials{
@@ -76,6 +96,7 @@
     border: 5px solid Grey;
     border-radius: 25px;
     margin-bottom: 50px;
+    padding: 10px; /* Add padding around the text */
 }
 
 #photos{
@@ -84,6 +105,7 @@
     width: fit-content;
     color: white;
     overflow: hidden;
+    padding: 10px; /* Add padding around the text */
     border-radius: 25px;
     margin-bottom: 50px;
     animation: auto linear reveal both;
@@ -96,7 +118,10 @@
 .subHeadingTitle{
     margin:auto;
     margin-left: 15px;
-    font-size:xx-large
+    font-size:xx-large;
+    text-decoration:dashed underline;
+    text-underline-offset: 8px;
+    padding-bottom: 20px;
 }
 
 .projectTitle{
@@ -120,3 +145,106 @@
     margin: 5px;
     margin-bottom: 50px;
   }
+
+  #name-typewriter{
+    width: max-content;
+    position:relative;
+    padding-left:10px;
+  }
+  #name-typewriter::before,
+  #name-typewriter::after{
+    content:"";
+    position:absolute;
+    top: 0;
+    right:0;
+    bottom:0;
+    left:0;
+  }
+  #name-typewriter::before{
+    background: #191919;
+    animation:typewriter 2s steps(30) 0.5s forwards;
+  }
+
+
+ #age-typewriter{
+    width: max-content;
+    position:relative;
+    padding-top: 5px;
+    padding-left:10px;
+  }
+  #age-typewriter::before,
+  #age-typewriter::after{
+    content:"";
+    position:absolute;
+    top: 0;
+    right:0;
+    bottom:0;
+    left:0;
+  }
+  #age-typewriter::before{
+    background: #191919;
+    animation:typewriter 1.5s steps(13) 0.5s forwards;
+    animation-delay: 3.5s;
+  }
+
+
+ #education-typewriter{
+    width: max-content;
+    position:relative;
+    padding-top: 5px;
+    padding-left:10px;
+
+  }
+  #education-typewriter::before,
+  #education-typewriter::after{
+    content:"";
+    position:absolute;
+    top: 0;
+    right:0;
+    bottom:0;
+    left:0;
+
+  }
+  #education-typewriter::before{
+    background: #191919;
+    animation:typewriter 2s steps(29) 0.5s forwards;
+    animation-delay: 5.5s;
+  }
+
+  #location-typewriter{
+    width: max-content;
+    position:relative;
+    padding-top: 5px;
+    padding-left:10px;
+  }
+  #location-typewriter::before,
+  #location-typewriter::after{
+    content:"";
+    position:absolute;
+    top: 0;
+    right:0;
+    bottom:0;
+    left:0;
+  }
+  #location-typewriter::before{
+    background: #191919;
+    animation:typewriter 2s steps(31) 0.5s forwards;
+    animation-delay: 8s;
+  }
+
+
+
+  @keyframes typewriter{
+    to{
+        left: 100%;
+    }
+  }
+  @keyframes blink{
+        0%, 50% { opacity: 1; } /* Add this line */
+        100% { opacity: 0; }
+  }
+  @keyframes hideCursor{
+    0%, 99% {opacity:1;}
+    100% {opacity:0;}
+  }
+
