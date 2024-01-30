@@ -15,6 +15,7 @@
     text-align: center;
     font-size: 50px;
     font-weight: lighter;
+    max-width: 90%;
 }
 #pfimage{
     position: relative;
@@ -36,8 +37,8 @@
 .imageframe{
     display: inline-block;
     margin: auto;
-    height: 15vh;
-    width: 15vh;
+    height: 150px;
+    width: 150px;
     background-color: #262626;
     border-radius: 25px;
     margin: 5px;
@@ -46,8 +47,9 @@
     text-align: center;
 }
 .imageframe img{
-    height: 100%;
-    width: 100%;
+      height: 100%;
+      width: 100%;
+      
 }
 .imageframe:hover{
     background-color: black;
@@ -61,8 +63,8 @@
   z-index: 2;
   background-color: #191919;
     margin:auto;
-    max-width: 95%;
-    width: fit-content;
+    max-width: 800px;
+    width: 95%;
     color: white;
     font-size: larger;
     overflow: hidden;
@@ -76,27 +78,40 @@
     position: relative;
     z-index: 2;
     margin:auto;
-    max-width: 95%;
-    width:fit-content;
+    max-width: 800px ;
+    width: 95%;
     color: white;
     overflow: hidden;
     border: 5px solid Grey;
-    background-color: #191919;
     border-radius: 25px;
     margin-bottom: 50px;
     padding: 10px; /* Add padding around the text */
 }
 
 #socials{
+    position: relative;
     margin:auto;
-    max-width: 95%;
-    width: fit-content;
+    max-width: 800px;
+    width: 95%;
     color: white;
     overflow: hidden;
     border: 5px solid Grey;
     border-radius: 25px;
     margin-bottom: 50px;
     padding: 10px; /* Add padding around the text */
+}
+
+#resume{
+  position: relative;
+  margin:auto;
+  max-width: 800px;
+  width: 95%;
+  color: white;
+  overflow: hidden;
+  border: 5px solid Grey;
+  border-radius: 25px;
+  margin-bottom: 50px;
+  padding: 10px; /* Add padding around the text */
 }
 
 #photos{
@@ -116,6 +131,7 @@
 
 
 .subHeadingTitle{
+    width: fit-content;
     margin:auto;
     margin-left: 15px;
     font-size:xx-large;
@@ -127,7 +143,33 @@
 .projectTitle{
     margin: auto;
     font-size: medium;
-    font-size: 2vh;
+    font-size: 20px;
+
+}
+
+#education{
+    margin: 20px;
+    font-size: medium;
+    font-size: 20px;
+
+}
+#resumeHeading{
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+.education{
+    margin: 10px;
+    font-size: medium;
+    font-size: 20px;
+    margin-top: 20px;
+
+}
+.skill{
+  margin: 10px;
+  font-size: medium;
+  font-size: 20px;
+  margin-top: 20px;
 
 }
 
@@ -183,8 +225,8 @@
   }
   #age-typewriter::before{
     background: #191919;
-    animation:typewriter 1.5s steps(14) 0.5s forwards;
-    animation-delay: 3.5s;
+    animation:typewriter 1s steps(14) 0.5s forwards;
+    animation-delay: 3s;
   }
 
 
@@ -208,7 +250,7 @@
   #education-typewriter::before{
     background: #191919;
     animation:typewriter 2s steps(30) 0.5s forwards;
-    animation-delay: 5.5s;
+    animation-delay: 4.5s;
   }
 
   #location-typewriter{
@@ -229,7 +271,7 @@
   #location-typewriter::before{
     background: #191919;
     animation:typewriter 2s steps(32) 0.5s forwards;
-    animation-delay: 8s;
+    animation-delay: 7s;
   }
 
 
