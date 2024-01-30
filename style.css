@@ -162,7 +162,7 @@
   }
   #name-typewriter::before{
     background: #191919;
-    animation:typewriter 2s steps(30) 0.5s forwards;
+    animation:typewriter 2s steps(31) 0.5s forwards;
   }
 
 
@@ -183,7 +183,7 @@
   }
   #age-typewriter::before{
     background: #191919;
-    animation:typewriter 1.5s steps(13) 0.5s forwards;
+    animation:typewriter 1.5s steps(14) 0.5s forwards;
     animation-delay: 3.5s;
   }
 
@@ -207,7 +207,7 @@
   }
   #education-typewriter::before{
     background: #191919;
-    animation:typewriter 2s steps(29) 0.5s forwards;
+    animation:typewriter 2s steps(30) 0.5s forwards;
     animation-delay: 5.5s;
   }
 
@@ -228,7 +228,7 @@
   }
   #location-typewriter::before{
     background: #191919;
-    animation:typewriter 2s steps(31) 0.5s forwards;
+    animation:typewriter 2s steps(32) 0.5s forwards;
     animation-delay: 8s;
   }
 
