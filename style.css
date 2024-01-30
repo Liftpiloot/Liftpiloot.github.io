@@ -2,8 +2,9 @@
     background-color: #191919;
     font-family: 'Courier New', Courier, monospace;
     font-weight: lighter;
-    overflow-x: hidden;
+    overflow-x: hidden!important;
     color: white;
+    max-width: 100%;
 }
 
 
@@ -17,20 +18,23 @@
     font-weight: lighter;
     max-width: 90%;
 }
-#pfimage{
-    position: relative;
+#pfimageContainer{
     z-index: 2;
-    left: 0;
-    top: 50%;
-    transition: transform 0.5s ease-out;
-    max-width: 40%!important; 
-    height: auto; 
-    overflow: hidden!important;
-  }
-  #pfimage img{
-    height: 100%;
+    position: relative;
     width: 100%;
+    max-height: fit-content;
+    display: flex;
+    align-items: center;
   }
+
+#pfimage{
+  width: 400px;
+  max-width: 40%;
+  max-height: fit-content;
+  position: relative;
+  left:0;
+  transition:left 1s ease;
+}
 #main{
     color: white;
 }

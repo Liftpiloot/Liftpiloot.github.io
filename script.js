@@ -1,13 +1,19 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("scroll", function() {
     var movingImage = document.getElementById("pfimage");
+    var container = document.getElementById("pfimageContainer");
     var title = document.getElementById("name")
-    var windowHeight = window.innerHeight;
+    var containerRect = container.getBoundingClientRect();
+    var imageRect = movingImage.getBoundingClientRect();
 
-    window.addEventListener("scroll", function() {
-      var scrollPosition = window.scrollY;
-      var newPosition = (scrollPosition / windowHeight) * 100;
+    var maxLeft = containerRect.width - imageRect.width;
 
-      movingImage.style.transform = "translateX(" + newPosition + "vw)";
-      title.style.transform = "translateY(" + 0.6 * scrollPosition + "px)";
-    });
+    if (window.scrollY <= maxLeft){
+      movingImage.style.left = window.scrollY + "px";
+    }else{
+      movingImage.style.left = maxLeft + "px";
+    }
+    // move title down halve the speed of the scroll
+    title.style.top = window.scrollY/2 + "px";
+
+
   });
