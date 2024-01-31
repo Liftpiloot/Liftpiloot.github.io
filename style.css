@@ -7,7 +7,6 @@
     max-width: 100%;
 }
 
-
 #name{
     position: relative;
     z-index: 1;
@@ -18,6 +17,7 @@
     font-weight: lighter;
     max-width: 90%;
 }
+
 #pfimageContainer{
     z-index: 2;
     position: relative;
@@ -35,21 +35,24 @@
   left:0;
   transition:left 0.5s ease-out;
 }
+
 #main{
     color: white;
 }
+
 .imageframe{
     display: inline-block;
     margin: auto;
     height: 150px;
     width: 150px;
-    background-color: #262626;
+    background-color: #2e2e2e;
     border-radius: 25px;
     margin: 5px;
     margin-bottom: 50px;
     transition:0.5s;
     text-align: center;
 }
+
 .imageframe img{
       height: 100%;
       width: 100%;
@@ -57,9 +60,6 @@
 }
 .imageframe:hover{
     background-color: black;
-}
-#aboutMe{
-
 }
 
 #information{
