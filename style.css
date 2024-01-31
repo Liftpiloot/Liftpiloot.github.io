@@ -77,6 +77,11 @@
     margin-bottom: 50px;
     padding: 10px;
 }
+@media  screen and (max-width: 385px) {
+  #information{
+    font-size: small;
+  }
+}
 
 #projects{
     position: relative;
@@ -170,6 +175,12 @@
     margin-top: 20px;
 
 }
+
+#skills{
+  margin: 20px;
+  font-size: medium;
+  font-size: 20px;
+}
 .skill{
   margin: 10px;
   font-size: medium;
@@ -187,7 +198,7 @@
     display: inline-block;
     margin: auto;
     width: 45%;
-    height: 45%
+    height: 45%;
     max-height: 250px;
     max-width: 250px;
     border-radius: 25px;
