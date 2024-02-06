@@ -66,24 +66,24 @@
   position: relative;
   z-index: 2;
   background-color: #191919;
-    margin:auto;
-    max-width: 800px;
-    width: 95%;
-    color: white;
-    font-size: larger;
-    overflow: hidden;
-    border: 3px solid;
-    border-radius: 25px;
-    margin-bottom: 50px;
-    padding: 10px;
-    animation: auto linear borderAnimation both;
-    animation-timeline: view();
-    animation-range: cover 20% cover 90%;
+  margin:auto;
+  max-width: 800px;
+  width: 95%;
+  color: white;
+  font-size: larger;
+  overflow: hidden;
+  border: 3px solid;
+  border-radius: 25px;
+  margin-bottom: 50px;
+  padding: 10px;
+  animation: auto linear borderAnimation both;
+  animation-timeline: view();
+  animation-range: cover 20% cover 90%;
 }
 
 @keyframes borderAnimation{
   0%{    
-    border: 0px solid;
+    border: 3px solid;
     border-radius: 0;
     border-color:#191919;
   }
@@ -97,7 +97,7 @@
     border-color: #bcbcbc;
     border-radius: 30px;
   }
-  100%{border: 0px solid;
+  100%{border: 3px solid;
     border-radius: 0;
     border-color:#191919;}
 }
@@ -219,8 +219,14 @@
     margin: 20px;
     font-size: medium;
     font-size: 20px;
-
 }
+
+#experience{
+    margin: 20px;
+    font-size: medium;
+    font-size: 20px;
+}
+
 #resumeHeading{
   text-decoration: underline;
   text-underline-offset: 8px;
